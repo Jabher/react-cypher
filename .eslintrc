@@ -1,0 +1,42 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "node": true
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "node",
+    "import"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:react/recommended",
+    "plugin:node/recommended-module",
+    "prettier-standard"
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "node/no-missing-import": "off",
+    "quotes": ["error", "backtick"]
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "fragment": "Fragment",
+      "version": "detect"
+    },
+    "linkComponents": [
+      "Link"
+    ]
+  }
+}
